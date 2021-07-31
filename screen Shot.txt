@@ -1,0 +1,174 @@
+Exo1
+public class Restaurantfood {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	  String name;
+	  float rating;
+	  long contact;
+	  String adress;
+		
+	//public void name() {
+	 System.out.println("Restaurant Details");
+	 System.out.println("*******************");
+		name = "McDonald's";
+		System.out.println("Restaurant Name : " + name);
+		rating = (float) 4.1;
+		System.out.println("Restaurant Rating : " + rating);
+		
+		contact = 9998787878L;
+		System.out.println("Restaurant Contact : " + contact);
+		adress = "D089, Saint.Louis street, Springflield";
+		System.out.println("Restaurant Adress : " + adress);
+		
+	}
+}
+
+
+moyenne
+public class Calculator {
+	double findaverage;
+	private int number1;
+	private int number2;
+	private int number3;
+	
+	public int getNumber1() {
+		return number1;
+	}
+	public void setNumber1(int number1) {
+		this.number1 = number1;
+	}
+	public void setNumber2(int number2) {
+		this.number2 = number2;
+	}
+	public void setNumber3(int number3) {
+		this.number3 = number3;
+	}
+	public void Setfindaverage(double  findaverage) {
+		this.findaverage = findaverage;
+		double findverage = (number1 + number2 +number3)/3;
+		//System.out.printf("%d,  %d, %d, = %d", number1, number2, number3, ((number1+number2+number3)/3)).println();
+		System.out.println(findverage);
+	}
+}
+
+public class Testfonction {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calculator average = new Calculator();
+			average.setNumber1(10);
+			average.setNumber2(20);
+			average.setNumber3(30);
+			average.Setfindaverage(0);
+		}
+
+	}
+
+restaurantdetail
+public class Restaurantdetails {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Restaurantfood1 afia = new Restaurantfood1();
+		afia.name("McDonald's");
+		afia.rating(41);
+		afia.contact(9998787878L);
+		afia.adress("D089, Saint.Louis street, Springflield");
+		}
+
+	}
+
+
+
+public class Food {
+	private String name;
+	private String cuisine;
+	private String type;
+	private int quantityavaible;
+	private double unitprice;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+		System.out.println("foodName: " +name);
+	}
+	
+	public void setCuisine(String cuisine) {
+		this.cuisine = cuisine;
+		System.out.println("Cuisine: " +cuisine);
+	}
+		public void setType(String type) {
+			this.type = type;
+		//System.out.println("foodtype : " +type);
+		}
+		public void setQuantityavaible(int quantityavaible) {
+			this.quantityavaible = quantityavaible;
+		System.out.println("quantityAvaible : " +quantityavaible);
+		}
+		public void setUnitprice(double unitprice) {
+			this.unitprice = unitprice; 
+		System.out.println("unitprice : " +unitprice);
+		}
+		//System.out.println("" +name);
+		//System.out.println("" +name);
+		//System.out.println("" +name);
+		//System.out.println("" +name);
+	}
+
+
+public class Testfood {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Food afia = new Food();
+		afia.setName("13");
+		afia.setCuisine("test");
+		afia.setQuantityavaible(123);
+		afia.setUnitprice(12L);
+
+	}
+
+}
+
+***********************************************************************************
+number1 number 2 number3
+public class Calculator {
+	double findaverage;
+	private int number1;
+	private int number2;
+	private int number3;
+	
+	public int getNumber1() {
+		return number1;
+	}
+	public void setNumber1(int number1) {
+		this.number1 = number1;
+	}
+	public void setNumber2(int number2) {
+		this.number2 = number2;
+	}
+	public void setNumber3(int number3) {
+		this.number3 = number3;
+	}
+	public void Setfindaverage() {
+		findaverage = (number1 + number2 +number3)/3;
+		
+		//System.out.printf("%d,  %d, %d, = %.2f", number1, number2, number3, ((number1+number2+number3)/3)).println();
+		System.out.printf("%.2f",((double)number1+(double)number2+(double)number3)/3);
+	}
+}
+Main
+public class Testfonction {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calculator average = new Calculator();
+			average.setNumber1(12);
+			average.setNumber2(8);
+			average.setNumber3(15);
+			average.Setfindaverage();
+		}
+
+	}

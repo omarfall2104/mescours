@@ -1,0 +1,34 @@
+public class Palindrome
+  {
+  	static boolean estPalindrome(String s, int start, int end)
+   {
+    if ((end - start) < 2)
+    {
+        return true;
+    }
+    if (s.charAt(start) != s.charAt(end))
+    {
+        return false;
+    }
+    return estPalindrome(s, ++start, --end);
+  }
+public static void main (String[] args) 
+{
+ 
+String array[]={"ressasser","engage le jeu que je le gagne","Sakoba Adams"};
+ 
+ 
+for(String mot:array)
+{
+	mot=mot.replaceAll("\\s","");
+if (estPalindrome(mot, 0,(mot.length())-1))
+{
+    System.out.println ("[ "+mot+" ] est un palindrome.\n");
+} else
+{
+    System.out.println ("[ "+mot+ " ] n'est pas un palindrome.\n");
+}
+}
+  }
+ 
+  }
