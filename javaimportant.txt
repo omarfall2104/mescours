@@ -1,0 +1,85 @@
+package com.saraya;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Arrays;
+
+public class Students {
+        private int id;
+		private String firstName;
+	    private String lastName;
+	    private int age;
+	    private String grade;
+	    private int[] marks;
+
+public Students (int id,String firstName,String lastName,int age,String grade,int[] marks) {
+			
+			this.id=id;
+			this.firstName=firstName;
+	        this.lastName=lastName;
+	        this.age=age;
+	        this.grade=grade;
+	        this.marks=marks;
+}
+
+int[]studentmarks= {98,95,100,97};
+
+@Override
+public String toString() {
+	
+	return firstName +" "+ lastName +" "+ age +" "+ grade +" "+ Arrays.toString(marks);
+}
+public int getstudentsMarks() {
+	return marks.length;
+}
+public int sommes() {
+	int somme = 0;
+	
+	for(int i:studentmarks) {
+		somme +=  i;
+	}
+	return somme;
+}
+public int MaxGrade() {
+	int maxGr=0;
+	for (int i=0;i<marks.length;i++) {
+		if (studentmarks[i]>maxGr){
+			maxGr=studentmarks[i];
+		}
+	}
+		return maxGr;
+	}
+public BigDecimal averageGrade() {
+	
+	return new BigDecimal(sommes()).divide(new BigDecimal(getstudentsMarks()),3,RoundingMode.UP);
+	
+
+}
+
+}
+---------------------------------------------------------------------------------
+---------------------
+package com.saraya;
+
+import java.math.BigDecimal;
+import java.util.Arrays;
+
+public class StudentsRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[]studentmarks= {98,95,100,97};
+		
+		Students student= new Students (121,"Ndioro","TOUNKARA",4,",1 année Jardin",studentmarks); 
+		int number=student.getstudentsMarks();
+		int sum=student.sommes();
+		int maxGr=student.MaxGrade();
+		BigDecimal average = student.averageGrade();
+		System.out.println(student);
+		System.out.println("le nombre de notes est:"+ number);
+		System.out.println("La somme des notes est :"+ student.sommes());
+		System.out.println("La plus grande note,le maximum est :"+ student.MaxGrade());
+		System.out.println("La moyenne est :"+ average);
+		
+		}
+}
