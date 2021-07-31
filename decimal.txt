@@ -1,0 +1,74 @@
+Java format double 2 decimal places – currency formatting
+farenda 2016-11-10 0 Comments
+It’s very common task in Java to format double to 2 decimal places – usually to format currency. It’s not easy to do correctly, but in this post we’ll show how.
+
+
+Round double using String.format
+The simplest way to print double rounded to two decimal places is to use String.format as here:
+
+double number = 12.5678;
+String s = String.format("%.2f", number);
+System.out.println(s);
+It prints the rounded value:
+
+12,57
+Note the comma in the formatted string. It is because String.format is using the current Locale and in my case it is pl_PL. In English locale it would print dot instead of comma.
+
+String.format prints leading zero
+This way of formatting double preserves leading zero, unlike some other number formatting:
+
+double number = 0.5678;
+String s = String.format("%.2f", number);
+System.out.println(s);
+The above code produces the following output:
+
+0,57
+Round double using DecimalFormat
+As String.format() above java.text.DecimalFormat is using default Locale to format numbers, so it will print formatted number with dot or comma as separator between integer and decimal parts:
+
+DecimalFormat df = new DecimalFormat("#.##");
+String s = df.format(1234.5678);
+System.out.println(s);
+## means that there should be at most 2 decimal numbers:
+
+1234,57
+DecimalFormat ## remove trailing zeros
+Note that # in the format means that the digit at that position is optional and won’t be printed if it not needed. This happens with trailing zero here:
+DecimalFormat df = new DecimalFormat("#.##");
+String s = df.format(123.0);
+System.out.println(s);
+It prints:
+
+123
+DecimalFormat “00” to preserve trailing zeros
+To force DecimalFormat to preserve specified number of trailing zeros use “00“:
+
+DecimalFormat df = new DecimalFormat("#.00");
+String s = df.format(123.0);
+System.out.println(s);
+Now double is formatted with trailing zeros:
+
+123,00
+Round double using NumberFormat – custom Locale
+java.text.NumberFormat is the most flexible class, but also the most cumbersome to use. It allows to set Locale and specify number formatting parameters:
+
+Locale locale = Locale.ENGLISH;
+NumberFormat nf = NumberFormat.getNumberInstance(locale);
+// for trailing zeros:
+nf.setMinimumFractionDigits(2);
+// round to 2 digits:
+nf.setMaximumFractionDigits(2);
+ 
+System.out.println(nf.format(.99));
+System.out.println(nf.format(123.567));
+System.out.println(nf.format(123.0));
+In the above code we set English Locale, and set double format to always have 2 decimal digits. The output is as expected:
+
+0.99
+123.57
+123.00
+Note the dot as separator in formatted number!
+
+References:
+How to create Java Locale in different ways
+Check out Java Currency Tutorial
