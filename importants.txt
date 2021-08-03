@@ -1,0 +1,131 @@
+Programme Orienté Objet
+
+package cartier;
+
+public class Person {
+	private String fistName;
+	private String name;
+	private int age;
+	private Adress adress;
+	
+	public Person (String fistName, String name, int age, Adress adress) {
+		this.fistName=fistName;
+		this.name =name;
+		this.age = age;
+		this.adress = adress;
+	}
+
+	public String getFistName() {
+		return fistName;
+	}
+
+	public void setFistName(String fistName) {
+		this.fistName = fistName;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public Adress getAdress() {
+		return adress;
+	}
+
+	public void setAdress(Adress adress) {
+		this.adress = adress;
+	}
+	public String toString() {
+		return fistName + " " + name+ " "+ " "+ age+ " "+ " "+ adress;
+	}
+}
+
+package cartier;
+
+public class Adress {
+		private int street;
+		private String city;
+		private String stall;
+		private int doorNumber;
+		private int zip;
+		
+		public Adress (int street, String city, String stall, int doorNumber,int zip) {
+			this.street =street;
+			this.city =city;
+			this.stall =stall;
+			this.doorNumber =doorNumber;
+			this.zip =zip;
+		}
+
+		public int getStreet() {
+			return street;
+		}
+
+		public void setStreet(int street) {
+			this.street = street;
+		}
+
+		public String getCity() {
+			return city;
+		}
+
+		public void setCity(String city) {
+			this.city = city;
+		}
+
+		public String getStall() {
+			return stall;
+		}
+
+		public void setStall(String stall) {
+			this.stall = stall;
+		}
+
+		public int getDoorNumber() {
+			return doorNumber;
+		}
+
+		public void setDoorNumber(int doorNumber) {
+			this.doorNumber = doorNumber;
+		}
+
+		public int getZip() {
+			return zip;
+		}
+
+		public void setZip(int zip) {
+			this.zip = zip;
+		}
+		public String toString() {
+			return street+ " "+ city+ " "+ stall+ " "+ doorNumber+ " "+ zip;
+		}
+
+}
+
+
+Method Main
+package cartier;
+
+public class Persona {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Adress omarAdress = new Adress(30, "Route des niaye", "Pâtte d'oie", 03, 12500 );
+		Person omar = new Person("Serigne", "fall", 39, omarAdress);
+		System.out.println(omar);
+		//System.out.println(omarAdress);
+
+	}
+
+}
