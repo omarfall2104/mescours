@@ -1,0 +1,62 @@
+public class Master {
+	private String fistName;
+	private String name;
+	private int age;
+	
+	public Master(String fistName, String name, int age) {
+		this.fistName = fistName;
+		this.name = name;
+		this.age = age;
+	}
+	
+	public void setFistName(String fistName) {
+		this.fistName = fistName;
+	}
+	
+	public String getFistName() {
+		return fistName;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public int getAge() {
+		return age;
+	}
+	public String toString() {
+		return fistName+ " "+ name+ " "+ age+ " ";
+	}
+	
+}
+----------------------------------------------------------------------
+public class Student extends Master {
+	private String classe;
+	
+	public Student(String fistName, String name, int age, String classe) {
+		super(fistName, name, age);
+		this.classe = classe;
+	}
+	public String toString() {
+	//	return super.getFistName() +" "+ super.getName() + " "+ super.getAge() + " "+ classe+ " ";
+	return super.toString() +" "+ classe;
+
+	}
+
+}
+---------------------------------------------------------------------------------------
+method main ()
+public class Runnermatersst {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student master = new Student("Serigne Omar", "Fall", 39, "informatique gestion");
+		System.out.println(master);
+
+	}
+
+}
