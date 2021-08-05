@@ -1,0 +1,51 @@
+public abstract class Recipe {
+	public void execute(){
+		shopping();
+		prepare();
+		cleanUp();
+	}
+	abstract void shopping();
+	abstract void prepare();
+	abstract void cleanUp();
+
+}
+
+----------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+public class Soupkandia extends Recipe {
+
+	@Override
+	void shopping() {
+		System.out.println("Kandia");
+		System.out.println("Huile de palme");
+		System.out.println("guédji");
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void prepare() {
+		System.out.println("Mettre la marnite au feu");
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void cleanUp() {
+		// TODO Auto-generated method stub
+		System.out.println("Madar");
+		
+	}
+
+}
+
+public class FootRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Soupkandia  soupkandia = new Soupkandia ();
+		soupkandia.execute();
+	}
+
+}
