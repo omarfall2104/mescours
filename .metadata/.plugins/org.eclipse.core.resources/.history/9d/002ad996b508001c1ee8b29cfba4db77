@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class NameListe {
+	ArrayList<String> name = new ArrayList<String>();
+	name.add("Fall");
+	name.add("Diop");
+	name.add("Camara");
+	name.add("Faye");
+
+}

@@ -1,0 +1,14 @@
+import java.util.List;
+
+public class StudentRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Student> students = List.of(new Student(100, "Abdou"), new Student(25, "Ali"),
+				new Student(25, "Salif"));
+		System.out.println(student);
+		
+
+	}
+
+}

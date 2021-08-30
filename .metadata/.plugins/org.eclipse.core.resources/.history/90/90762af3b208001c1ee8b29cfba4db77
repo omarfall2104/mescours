@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.ListIterator;
+import java.util.stream.Collectors;
+
+public class Name {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> name = new ArrayList<String>();
+		name.add("Fall");
+		name.add("Diop");
+		name.add("Camara");
+		name.add("Faye");
+		ListIterator<String> itname =  name.listIterator();
+		while (itname.hasPrevious()) System.out.print(itname.previous() + " ") ;
+
+		//while(itname.hasNext()) System.out.print(itname.next()+ " ");
+		//for(int i = itname.size(); i<0 i--) System.out.println();
+		//while(itname.hasNext()) itname.stream().sorted().forEach(e -> System.out.println(e));
+		//name.stream().sorted().collect(Collectors.toList());
+		//for(String it : name) System.out.println(it);
+		//for (int i=0 i<itname.size() ; i--) System.out.print(itname.get()+ " ");
+		//while (itname.hasPrevious()) System.out.print(itname.previous() + " ") ;
+		}
+	//}
+
+}

@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class FormationService {
+	
+	 List<Formation> formations = new ArrayList<Formation>();
+	 
+	 
+
+}

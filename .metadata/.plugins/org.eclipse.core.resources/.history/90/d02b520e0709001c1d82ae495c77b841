@@ -1,0 +1,12 @@
+package com.saraya;
+
+public class Exercice4 {
+	private Integer name;
+	
+	public Exercice4(Integer name){
+		this.name = name;
+	}
+	public String toString() {
+		return name;
+	}
+}

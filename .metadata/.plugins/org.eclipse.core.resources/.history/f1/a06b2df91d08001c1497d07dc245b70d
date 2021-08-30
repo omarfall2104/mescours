@@ -1,0 +1,19 @@
+package com.saraya;
+
+public class ExoHashMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		private int a = 3;
+		private int b = 10;
+		private int c = 20;
+	}
+		public ExoHashMap(int a, int b, int c) {
+			this.a = a;
+			this.b = b;
+			this.c = c;
+			
+		}
+
+	}
+

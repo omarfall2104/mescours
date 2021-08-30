@@ -1,0 +1,15 @@
+package com.saraya;
+
+public class UserValidation {
+	//private String userName;
+	//private String password;
+	public boolean userValidation (String username, String password) {
+		if(userValidation.equals("omarfall") && userValidation.equals("2104")) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class PlatRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Soupe soupe = new Soupe("oignon" , 124, "tres bon");
+		System.out.println(soupe);
+	}
+
+}

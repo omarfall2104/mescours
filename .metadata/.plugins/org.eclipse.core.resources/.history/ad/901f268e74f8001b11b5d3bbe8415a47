@@ -1,0 +1,11 @@
+
+public class Bank {
+	private int interet;
+	
+	public String getInteret() {
+		return interet;
+	}
+	public String toString() {
+		return interet+ " ",
+	}
+}

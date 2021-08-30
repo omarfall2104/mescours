@@ -1,0 +1,5 @@
+
+public class UserValisation {
+	public boolean userValidation (String user, String motpass)
+
+}

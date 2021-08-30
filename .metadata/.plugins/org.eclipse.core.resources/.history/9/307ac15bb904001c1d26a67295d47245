@@ -1,0 +1,5 @@
+
+public class FormationService {
+	private static List<Fomation> formation = new ArrayList<>();
+
+}

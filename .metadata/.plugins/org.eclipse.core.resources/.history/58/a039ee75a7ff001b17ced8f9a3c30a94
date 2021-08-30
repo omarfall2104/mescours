@@ -1,0 +1,21 @@
+package lamdaexercice;
+
+import java.util.List;
+
+public class Fruits {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> fruits = List.of("Orange","Pineapple","Pear","Apple","Grapefruit","Peach",
+				"Pear","Apprico","Pineapple");
+		
+		fruits.stream().peek("Orange").forEach(e -> System.out.println(e));
+		//fruits.stream().soter(e -> System.out.println(e));
+		//fruits.stream().sorted( e -> forEach(e));
+		//List.sort.forEach(e -> System.out.println(e));
+		//fruits.stream().distinct().forEach(e -> System.out.println(e));
+		//fruits.stream().sorted().distinct().forEach(e -> System.out.println(e));
+
+	}
+
+}

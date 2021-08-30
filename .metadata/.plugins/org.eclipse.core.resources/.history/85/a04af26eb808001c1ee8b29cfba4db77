@@ -1,0 +1,17 @@
+import java.util.LinkedList;
+
+public class Exercice3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<String> name = new LinkedList<>();
+		name.add("Abdou");
+		name.add("Salif");
+		name.add("Khady");
+		name.add("Fatou");
+	
+	for(int i= name.size(); i<0; i++) {
+		System.out.println(name.size());
+	}
+	}
+}

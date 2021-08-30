@@ -1,0 +1,12 @@
+package com.saraya;
+
+public class MultiTreadEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Start Task1");
+		fo(int i = 100; i <= 199l i++){
+
+	}
+
+}

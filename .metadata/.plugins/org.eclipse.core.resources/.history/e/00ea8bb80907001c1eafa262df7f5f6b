@@ -1,0 +1,10 @@
+import java.util.concurrent.Executors;
+
+public class ExecutorWithCallable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ExecutorService es = Executors.newFixedThreadPool(1);
+	}
+
+}

@@ -1,0 +1,17 @@
+import java.util.LinkedList;
+
+public class LinkedListNameRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<LinkedListName> names = new LinkedList<>();
+		names.add(new LinkedListName("Khalifa"));
+		names.add(new LinkedListName("Mamadou"));
+		names.add(new LinkedListName("Sophie"));
+		names.add(new LinkedListName("Ibrahima"));
+		
+		for(int i=0; i<names.size(); i++);
+		System.out.println(names.get(i));
+	}
+
+}

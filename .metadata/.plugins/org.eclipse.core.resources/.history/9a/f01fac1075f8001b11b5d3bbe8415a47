@@ -1,0 +1,14 @@
+
+public class Bank {
+	private int interet;
+	
+	public void getInteret(int interet) {
+		return interet;
+	}
+	public void setInteret(int ineret) {
+		this.interet = interet;
+	}
+	public String toString() {
+		return interet+ " ";
+	}
+}

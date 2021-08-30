@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [27/Aug/2021:17:03:20 +0100] "GET / HTTP/1.1" 200 305 http-bio-8080-exec-1 587
+0:0:0:0:0:0:0:1 - - [27/Aug/2021:17:03:21 +0100] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 5
+0:0:0:0:0:0:0:1 - - [27/Aug/2021:17:03:32 +0100] "GET /?prenom=omarf&passe=fqll HTTP/1.1" 200 305 http-bio-8080-exec-4 5
+0:0:0:0:0:0:0:1 - - [27/Aug/2021:17:12:11 +0100] "GET /?prenom=omarf&passe=fqll HTTP/1.1" 200 328 http-bio-8080-exec-1 487
+0:0:0:0:0:0:0:1 - - [27/Aug/2021:17:12:21 +0100] "POST /login.do HTTP/1.1" 200 205 http-bio-8080-exec-3 71
+0:0:0:0:0:0:0:1 - - [27/Aug/2021:19:33:06 +0100] "GET / HTTP/1.1" 200 328 http-bio-8080-exec-1 135
+0:0:0:0:0:0:0:1 - - [27/Aug/2021:19:33:07 +0100] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 2
+0:0:0:0:0:0:0:1 - - [27/Aug/2021:19:33:15 +0100] "POST /login.do HTTP/1.1" 200 205 http-bio-8080-exec-4 64
+0:0:0:0:0:0:0:1 - - [27/Aug/2021:20:41:35 +0100] "POST /login.do HTTP/1.1" 500 1790 http-bio-8080-exec-1 137

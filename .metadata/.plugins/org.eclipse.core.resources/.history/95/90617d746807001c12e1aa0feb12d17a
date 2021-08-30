@@ -1,0 +1,12 @@
+package com.saraya;
+
+public class Validation {
+	//private String userName;
+	//private String password;
+	public boolean (String userName, String password) {
+		if(userName = "serigne" && password = "2104") {
+			return true;
+		}
+	}
+
+}

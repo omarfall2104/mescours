@@ -1,0 +1,17 @@
+//simport javax.servlet.annotation.WebServlet;
+//import javax.servlet.http.HttpServlet;
+
+
+//@SuppressWarnings("serial")
+//@WebServlet(urlPatterns = "/login.do")
+public class UserValisation{
+	public boolean  userValidation (String username, String password) {
+		if(username.equals("serigne") && password.equals("2104")) {
+		return true;
+	} 
+		else {
+		return false;
+	}
+
+}
+}

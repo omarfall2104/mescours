@@ -1,0 +1,10 @@
+import java.sql.Array;
+
+public class Jourweek {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String [] dayOfweek = {"Sunday", "Monday", "Thuesdaye", "Wednesday", "Friday", "Saturday"};
+		System.out.println(Array.todayOfweek);
+	}
+}

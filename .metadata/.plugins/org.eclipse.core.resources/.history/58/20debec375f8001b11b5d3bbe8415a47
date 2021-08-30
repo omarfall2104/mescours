@@ -1,0 +1,7 @@
+
+public class Sgbs extends Bank {
+	public Sgbs(int interet) {
+		super(interet);
+	}
+
+}

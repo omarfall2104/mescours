@@ -1,0 +1,12 @@
+package com.saraya;
+
+public class UsrValidation {
+	public boolean IsValid(String user, String motDepass) {
+		if(nam.equalsIgnoreCase("omarfall") && pass.equals("2014")) {
+			return true;
+		}
+			return false;
+		}
+	
+
+}

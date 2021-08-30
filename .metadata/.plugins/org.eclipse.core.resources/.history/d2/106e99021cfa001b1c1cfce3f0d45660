@@ -1,0 +1,10 @@
+
+public class Soupe implements PlatCree extends Ingredient {
+
+	@Override
+	public void nom() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

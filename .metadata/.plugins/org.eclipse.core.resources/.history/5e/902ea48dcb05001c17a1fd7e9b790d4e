@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class FormationService {
+	
+	private public  List<Formation> formation = new ArrayList<Formation>();
+	 static {
+		 fornations.add(new Formation("Infographie"));
+
+		
+	}
+	}
+

@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class FormationService {
+	
+	private  List<Formation> formations = new ArrayList<Formation>() {
+		
+	}
+	Formation(new formation("HTML"));
+	
+	
+}

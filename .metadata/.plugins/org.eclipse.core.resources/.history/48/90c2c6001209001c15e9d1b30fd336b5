@@ -1,0 +1,27 @@
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Grade {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> grade = List.of(12, 21, 15, 14, 1, 16, 14, 17, 3);
+		//grade.stream().filter(e -> 2 * (e%2==0)).forEach(e -> System.out.println(e));
+		for(int i =0; i<grade.size(); i++) {
+			if(grade.get(i)%2==0) {
+				System.out.print(grade.get(i));
+			}
+		}
+	//	System.out.println("========================================");
+		//grade.stream().max(e ->).filter(e -> e%2!=0). forEach(e -> System.out.println(e));
+		//grade.stream().
+
+		//grade.stream().filter(e -> e%2==0).collect(Collectors.toList());
+		
+	//grade.stream().filter(s -> s.length() > 3).collect(Collectors.toList());
+
+
+	}
+}
+
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\OMAR FALL\eclipse-workspace\exercie.exercice\src\exercie\exercice\Test.java"/>
+			<item value="C:\Users\OMAR FALL\eclipse-workspace\fall-web-app4"/>
+			<item value="C:\Users\OMAR FALL\eclipse-workspace\fall-web-app"/>
+			<item value="C:\Users\OMAR FALL\eclipse-workspace\seconds-web-app"/>
+			<item value="C:\Users\OMAR FALL\eclipse-workspace\first-web-app\pom.xml"/>
+			<item value="C:\Users\OMAR FALL\eclipse-workspace\mven\src"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.saraya"/>
+			<item value="Com.saraya"/>
+		</list>
+		<list key="name">
+			<item value="first-zeb-app1"/>
+		</list>
+		<list key="artifactId">
+			<item value="fall-web-validation5"/>
+			<item value="fall-web-validation4"/>
+			<item value="fall-web-validation1"/>
+			<item value="Fall-web-validation"/>
+			<item value="fall-web-app7"/>
+			<item value="fall-web-app6"/>
+			<item value="fall-web-app5"/>
+			<item value="fall-wweb-app4"/>
+			<item value="fall-web-app3"/>
+			<item value="fall-web-app2"/>
+			<item value="fall-web-app1"/>
+			<item value="second-web-apps"/>
+			<item value="seconds-web-app2"/>
+			<item value="seconds-web-app1"/>
+			<item value="first-web-app1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

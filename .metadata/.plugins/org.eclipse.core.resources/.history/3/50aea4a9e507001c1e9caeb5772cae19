@@ -1,0 +1,51 @@
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.saraya.Validation;
+
+@WebServlet(urlPatterns ="/login.do")
+public class LoginServlet extends HttpServlet{
+	
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws IOException, ServletException {
+		
+		request.setAttribute("name", request.getParameter("name"));
+		request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws IOException, ServletException {
+		Validation uv = new Validation();
+		//uv.userValidation();
+		//FormationService fs = new FormationService();
+		//fs.getAllFormation();
+		//request.setAttribute("fomar", fs.getAllFormation());
+		String motpass = request.getParameter("pass");
+		String username = request.getParameter("username");
+		//request.setAttribute("pass", motpass);
+		if(uv.userValidation(username, motpass)) {
+			request.setAttribute("username", username);
+			request.getRequestDispatcher("/WEB-INF/views/home.jsp").forward(request, response);
+			
+		} else {
+			request.setAttribute(name, motpass);
+			request.getRequestDispatcher("/WEB-INF/views/home.jsp").forward(request, response);
+		}
+		//String nom = request.getParameter("name");
+		//request.setAttribute("format", nom);
+		//request.setAttribute("name", nom);
+		
+		request.setAttribute("pass", motpass);
+		request.getRequestDispatcher("/WEB-INF/views/home.jsp").forward(request, response);
+	}
+	
+	
+	
+
+}

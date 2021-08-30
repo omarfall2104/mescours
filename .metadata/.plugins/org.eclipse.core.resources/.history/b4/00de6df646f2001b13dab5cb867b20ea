@@ -1,0 +1,15 @@
+
+public class Monnom {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Arrah fall = new Arrah();
+		//fall.nomlength;
+		var nom = "Serigneomarfall";
+		//public nom (String nom);
+		//this.nom = nom;
+		var nomlength = nom[];
+		System.out.println("Mon nom est egale à "+ nomlength);
+	}
+
+}

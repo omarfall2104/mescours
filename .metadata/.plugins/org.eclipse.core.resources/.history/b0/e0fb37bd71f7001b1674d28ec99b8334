@@ -1,0 +1,9 @@
+
+public class Phone extends Enployes {
+	private int phoneOffice;
+	private int phoneHome;
+	
+	
+	public Phone(String nom, String prenom, int phoneOffice, int phoneHome)
+
+}

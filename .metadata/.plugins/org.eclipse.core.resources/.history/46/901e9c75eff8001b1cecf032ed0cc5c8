@@ -1,0 +1,15 @@
+package cllectionexemple;
+
+import java.util.ArrayList;
+
+public class StudentRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 ArrayList<StudentClass> studentList = new ArrayList<>();
+		 System.out.println(studentList.isEmpty());
+		 studentList.add(new studentClass("Java"));
+
+	}
+
+}

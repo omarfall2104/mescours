@@ -1,0 +1,15 @@
+package cllectionexemple;
+
+public class StudentClass {
+	private String studentName;
+	
+	
+	public StudentClass(String studentName) {
+		this. studentName =  studentName;
+	}
+	
+	String toString() {
+		return  studentName;
+	}
+
+}

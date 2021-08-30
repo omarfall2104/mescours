@@ -1,0 +1,8 @@
+import javax.servlet.http.HttpServlet;
+
+public class UserValisation extends HttpServlet{
+	public boolean  userValidation (String user, String pass) {
+		if(user.equals("serigne") && pass.equals("2104"));
+	}
+
+}

@@ -1,0 +1,17 @@
+import java.util.List;
+
+public class Grade {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> grade = List.of(12, 21, 15, 14, 1, 16, 14, 17, 3);
+		System.out.println("========================================");
+		grade.stream().filter(e -> e%2==0).forEach(e -> System.out.println(e));
+		System.out.println("========================================");
+
+		grade.stream().Max().filter(e -> e%2!=0). forEach(e -> System.out.println(e));
+
+
+	}
+
+}

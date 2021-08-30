@@ -1,0 +1,34 @@
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet(urlPatterns = "/login.do")
+public class LoginServlet extends HttpServlet{
+	Formation fs = new FormationService();
+		fs.getAllFormation();
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+	throws IOException, ServletException {
+		request.setAttribute("name", request.getParameter("name"));
+		request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws IOException, ServletException {
+		String prenom = request.getParameter("first");
+				request.setAttribute("first", prenom);
+				
+				String nom = request.getParameter("nam");
+				request.setAttribute("nam", nom);
+				
+				String mpass = request.getParameter("pass");
+				request.setAttribute("pass", mpass);
+				request.getRequestDispatcher("/WEB-INF/views/home.jsp").forward(request, response);
+			}
+	//request.setAttribute("format", nom);
+	// en haut Formation fs = new FormationService();
+	// fs.getAllFormation();
+}

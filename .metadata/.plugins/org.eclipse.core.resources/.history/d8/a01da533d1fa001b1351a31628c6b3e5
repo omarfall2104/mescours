@@ -1,0 +1,5 @@
+package character;
+
+public class List {
+	List<Character> = List.of('A', 'Z', 'A', 'B', 'Z');
+}

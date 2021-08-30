@@ -1,0 +1,12 @@
+
+public class LinkedListName {
+	private String name;
+	
+	public LinkedListName(String name) {
+		this.name = name;
+	}
+	public String toString() {
+		return name;
+	}
+
+}

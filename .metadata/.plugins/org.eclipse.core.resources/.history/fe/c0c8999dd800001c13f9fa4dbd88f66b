@@ -1,0 +1,5 @@
+package coursexends;
+
+public abstract class B {
+
+}

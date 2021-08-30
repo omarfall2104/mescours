@@ -1,0 +1,44 @@
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet(urlPatterns = "/login.do")
+public class LoginServlet extends HttpServlet {
+
+
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws IOException, ServletException {
+		
+		request.setAttribute("name", request.getParameter("name"));
+		request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws IOException, ServletException {
+		FormationService fm = new FormationService();
+		fm.getAllFormation();
+		UserValidation validate = new UserValidation();
+		String nom = request.getParameter("name");
+		String pass = request.getParameter("motpass");
+		
+		if(validate.userValidation(nom, pass)) {
+		//request.setAttribute("format", nom);
+		request.setAttribute("name", nom);
+		request.setAttribute("motpass", pass);
+		request.setAttribute("formats", fm.getAllFormation());
+		request.getRequestDispatcher("/WEB-INF/views/home.jsp").forward(request, response);
+		//response.sendRedirect("formation.do");
+		} else {
+		request.setAttribute("errorMessage", "User name or password provided incorrect");
+	request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+
+		
+	}
+	}
+}
+
+

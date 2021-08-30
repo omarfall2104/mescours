@@ -1,0 +1,11 @@
+
+public class Formation {
+	private String name;
+	
+	public void Formation(String name) {
+		this.name = name;
+	}
+	public String getName() {
+		return;
+	}
+}

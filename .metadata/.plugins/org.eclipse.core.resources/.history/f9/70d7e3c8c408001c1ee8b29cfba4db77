@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class CourseRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Course> name = new ArrayList<Course>();
+		//LinkedList<Course> name = new LinkedList<>();
+		name.add("ForLoop");
+		name.add("Thread");
+		name.add("Collection");
+		name.add("Stream");
+		name.add("Fonctionna Programming");
+
+	}
+
+}

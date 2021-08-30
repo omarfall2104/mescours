@@ -1,0 +1,15 @@
+package com.saraya;
+
+import java.util.HashMap;
+
+public class ExoHashMap1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<String, Integer> num = new HashMap<String, Integer>();
+		num.put("Onar", 12);
+		num.put("pape", 13);
+		num.put("khady", 21);
+	}
+
+}

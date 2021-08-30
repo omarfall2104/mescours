@@ -1,0 +1,26 @@
+package coursexends;
+
+public class Acc extends Ab {
+
+	@Override
+	void a() {
+		System.out.println("I am a");
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	void c() {
+		System.out.println("I am c");
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	void d() {
+		System.out.println("I am d");
+		// TODO Auto-generated method stub
+
+	}
+
+}

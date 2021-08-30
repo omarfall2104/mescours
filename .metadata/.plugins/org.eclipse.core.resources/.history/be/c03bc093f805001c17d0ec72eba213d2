@@ -1,0 +1,9 @@
+package com.saraya;
+
+public class Hello extends Thread {
+	public void run() { 
+	
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+package coursexends;
+
+public interface A {
+	public void int a;
+	public void int b;
+	public void int c;
+	public void int d;
+}

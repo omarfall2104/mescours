@@ -1,0 +1,13 @@
+package com.saraya;
+
+public class Task2 implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		Task1 task1 = new Task1();
+		task1.start();
+		
+	}
+
+}

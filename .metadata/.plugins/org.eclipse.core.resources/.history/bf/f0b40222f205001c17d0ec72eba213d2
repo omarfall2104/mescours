@@ -1,0 +1,9 @@
+package com.saraya;
+
+public class Task1 extends Thread {
+	public void run() { 
+	
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+
+public class UserValidation {
+	public static boolean userValidation(String username, String password) {
+		
+	}
+		static {
+		if(userValidation.)
+	}
+
+}

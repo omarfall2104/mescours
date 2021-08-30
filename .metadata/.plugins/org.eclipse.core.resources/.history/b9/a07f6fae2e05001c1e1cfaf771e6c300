@@ -1,0 +1,6 @@
+import java.util.List;
+
+public class FormationCre {
+	private static List<Formation> formations = new ArrayList<Formation>();
+
+}

@@ -1,0 +1,17 @@
+import java.util.concurrent.ExecutorService;
+
+public class TaskTheadExecuterSevicePool {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ExecutorService es = ExecutorService.newFixedThreadPool(10);
+		es.execute(new Task(1));
+		es.execute(new Task(1));
+		es.execute(new Task(1));
+		es.execute(new Task(1));
+		
+		es.shutdown();
+
+	}
+
+}

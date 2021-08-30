@@ -1,0 +1,27 @@
+
+public class Phone extends Enployes {
+	private int phoneOffice;
+	private int phoneHome;
+	
+	
+	public Phone(String nom, String prenom) {
+		super(nom, prenom); 
+		this.phoneOffice = phoneOffice;
+		this.phoneHome = phoneHome;
+	}
+	
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+		
+	}
+	public void getPrenom(String prenom) {
+		return;
+	}
+	public void setnom(String nom) {
+		this.nom = nom;
+	}
+	public void getnom(String nom) {
+		return;
+	
+
+}

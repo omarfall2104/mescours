@@ -1,0 +1,29 @@
+
+public class Employee {
+	private String prenom;
+	private String fonction;
+	private String entreprise;
+	private BitDecimal salaire;
+
+	//public Employee(String prenom, String fonction, String entreprise) {
+		//this.prenom = prenom;
+		//this.fonction = fonction;
+		//this.entreprise = entreprise;
+	//}
+	public void set.Email1(String email) {
+		this.email = email;
+	}
+	public void get.Email(String email) {
+		return email;
+	}
+	public void set.Number(int number) {
+		this.number = number;
+	}
+	public void get.Number(String number) {
+		return number;
+	public String toString() {
+		return prenom+ " "+ fonction+ " "+ entreprise+ " "+ email+ " "+ number+ " "; 
+		
+	}
+	
+}

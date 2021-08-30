@@ -1,0 +1,13 @@
+package com.saraya;
+
+import java.util.LinkedHashSet;
+
+public class RunnerExo4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+	LinkedHashSet<Exercice4> lknb = new LinkedHashSet();
+	iknb
+
+}

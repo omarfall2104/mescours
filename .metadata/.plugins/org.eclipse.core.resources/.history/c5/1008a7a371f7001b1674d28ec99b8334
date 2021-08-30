@@ -1,0 +1,6 @@
+
+public class Phone extends Enployes {
+	private int phoneOffice;
+	private int phoneHome;
+
+}
